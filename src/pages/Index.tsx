@@ -4,19 +4,19 @@ import Navigation from '../components/Navigation';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}
       <section className="py-20 px-8">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-5xl font-semibold text-charcoal tracking-wide">
+          <h1 className="text-5xl font-light text-gray-900 tracking-wide">
             AWS Data Scientist
           </h1>
-          <p className="text-xl text-aws-blue max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Data Scientist + AWS = Scalable Insights
           </p>
-          <p className="text-lg text-muted max-w-3xl mx-auto">
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto">
             Designing and deploying scalable machine learning solutions using AWS services. 
             Transforming raw data into actionable insights in production-ready cloud environments.
           </p>
@@ -32,28 +32,19 @@ const Index = () => {
       </section>
 
       {/* AWS Certifications */}
-      <section className="py-16 px-8 bg-cloud-gray">
+      <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-medium text-charcoal mb-8">
+          <h2 className="text-3xl font-light text-gray-900 mb-8">
             AWS Certified
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="bg-white p-6 rounded-lg border border-gray-200 text-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-aws-blue rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-white text-xl font-bold">ML</span>
-              </div>
+            <div className="bg-white p-4 rounded border border-gray-200 text-sm">
               AWS Certified Machine Learning – Specialty
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200 text-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-aws-blue rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-white text-xl font-bold">SA</span>
-              </div>
+            <div className="bg-white p-4 rounded border border-gray-200 text-sm">
               AWS Certified Solutions Architect – Associate
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200 text-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-teal rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-white text-xl font-bold">DA</span>
-              </div>
+            <div className="bg-white p-4 rounded border border-gray-200 text-sm">
               AWS Certified Data Analytics – Specialty
             </div>
           </div>
@@ -63,73 +54,73 @@ const Index = () => {
       {/* Core AWS Skills */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-medium text-center text-charcoal mb-12">
+          <h2 className="text-3xl font-light text-center text-gray-900 mb-12">
             AWS Cloud Expertise
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <div className="w-16 h-16 bg-teal rounded-full mx-auto flex items-center justify-center">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gray-900 rounded-full mx-auto flex items-center justify-center">
                 <span className="text-white text-xl">🤖</span>
               </div>
-              <h3 className="text-lg font-medium text-charcoal">Machine Learning</h3>
-              <p className="text-muted text-sm">SageMaker, Lambda, ECR, Model Endpoints</p>
+              <h3 className="text-lg font-medium text-gray-900">Machine Learning</h3>
+              <p className="text-gray-600 text-sm">SageMaker, Lambda, ECR, Model Endpoints</p>
             </div>
-            <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <div className="w-16 h-16 bg-aws-blue rounded-full mx-auto flex items-center justify-center">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gray-900 rounded-full mx-auto flex items-center justify-center">
                 <span className="text-white text-xl">📊</span>
               </div>
-              <h3 className="text-lg font-medium text-charcoal">Data Analytics</h3>
-              <p className="text-muted text-sm">S3, Athena, Glue, Redshift, Kinesis</p>
+              <h3 className="text-lg font-medium text-gray-900">Data Analytics</h3>
+              <p className="text-gray-600 text-sm">S3, Athena, Glue, Redshift, Kinesis</p>
             </div>
-            <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <div className="w-16 h-16 bg-charcoal rounded-full mx-auto flex items-center justify-center">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gray-900 rounded-full mx-auto flex items-center justify-center">
                 <span className="text-white text-xl">⚙️</span>
               </div>
-              <h3 className="text-lg font-medium text-charcoal">MLOps & DevOps</h3>
-              <p className="text-muted text-sm">CodePipeline, CloudWatch, IAM, Terraform</p>
+              <h3 className="text-lg font-medium text-gray-900">MLOps & DevOps</h3>
+              <p className="text-gray-600 text-sm">CodePipeline, CloudWatch, IAM, Terraform</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Featured Projects Preview */}
-      <section className="py-16 px-8 bg-cloud-gray">
+      <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-medium text-center text-charcoal mb-12">
+          <h2 className="text-3xl font-light text-center text-gray-900 mb-12">
             Featured AWS Projects
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border border-gray-200 p-6 hover:shadow-lg transition-shadow rounded-lg">
-              <h3 className="text-xl font-medium text-charcoal mb-2">
+            <div className="bg-white border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-medium text-gray-900 mb-2">
                 Customer Churn Prediction
               </h3>
-              <p className="text-muted text-sm mb-4">
+              <p className="text-gray-600 text-sm mb-4">
                 End-to-end ML pipeline using SageMaker for model training and Lambda for real-time inference, 
                 achieving 94% accuracy in production.
               </p>
               <div className="flex gap-2 flex-wrap mb-4">
-                <span className="px-3 py-1 bg-aws-blue text-white text-xs rounded-full">SageMaker</span>
-                <span className="px-3 py-1 bg-teal text-white text-xs rounded-full">Lambda</span>
-                <span className="px-3 py-1 bg-charcoal text-white text-xs rounded-full">S3</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">SageMaker</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">Lambda</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">S3</span>
               </div>
-              <Link to="/projects" className="text-aws-blue text-sm font-medium hover:underline">
+              <Link to="/projects/churn-prediction-aws" className="text-gray-900 text-sm font-medium hover:underline">
                 View Project →
               </Link>
             </div>
-            <div className="bg-white border border-gray-200 p-6 hover:shadow-lg transition-shadow rounded-lg">
-              <h3 className="text-xl font-medium text-charcoal mb-2">
+            <div className="bg-white border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-medium text-gray-900 mb-2">
                 Real-time Fraud Detection
               </h3>
-              <p className="text-muted text-sm mb-4">
+              <p className="text-gray-600 text-sm mb-4">
                 Streaming data pipeline with Kinesis and Lambda for real-time fraud detection, 
                 processing 100K+ transactions per minute.
               </p>
               <div className="flex gap-2 flex-wrap mb-4">
-                <span className="px-3 py-1 bg-aws-blue text-white text-xs rounded-full">Kinesis</span>
-                <span className="px-3 py-1 bg-teal text-white text-xs rounded-full">Lambda</span>
-                <span className="px-3 py-1 bg-charcoal text-white text-xs rounded-full">DynamoDB</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">Kinesis</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">Lambda</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">DynamoDB</span>
               </div>
-              <Link to="/projects" className="text-aws-blue text-sm font-medium hover:underline">
+              <Link to="/projects/fraud-detection" className="text-gray-900 text-sm font-medium hover:underline">
                 View Project →
               </Link>
             </div>
@@ -145,19 +136,19 @@ const Index = () => {
       {/* Quick Contact */}
       <section className="py-16 px-8">
         <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl font-medium text-charcoal">
+          <h2 className="text-3xl font-light text-gray-900">
             Ready to Scale Your Data?
           </h2>
-          <p className="text-muted">
+          <p className="text-gray-600">
             Available for AWS ML consulting, workshops, and cloud architecture design
           </p>
           <div className="flex gap-4 justify-center">
             <Link to="/contact" className="btn-primary">
               Start a Project
             </Link>
-            <Link to="/contact" className="btn-secondary">
+            <a href="#" className="btn-secondary">
               Download Resume
-            </Link>
+            </a>
           </div>
         </div>
       </section>

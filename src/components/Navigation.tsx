@@ -16,10 +16,10 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="border-b border-gray-200 bg-white shadow-sm">
+    <nav className="border-b border-gray-200 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-semibold text-charcoal">
+          <Link to="/" className="text-xl font-medium text-gray-900">
             DS Portfolio
           </Link>
           
@@ -28,10 +28,10 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors py-2 ${
+                className={`text-sm font-medium transition-colors ${
                   location.pathname === item.path
-                    ? 'text-aws-blue border-b-2 border-aws-blue'
-                    : 'text-muted hover:text-charcoal'
+                    ? 'text-gray-900 border-b-2 border-gray-900'
+                    : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
                 {item.label}

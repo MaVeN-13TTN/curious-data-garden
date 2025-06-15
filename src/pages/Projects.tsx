@@ -42,60 +42,41 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
-      <div className="max-w-5xl mx-auto py-16 px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-semibold text-charcoal mb-4">AWS ML Projects</h1>
-          <p className="text-muted text-lg max-w-2xl mx-auto">
-            Production-ready machine learning solutions built on AWS cloud infrastructure
-          </p>
-        </div>
+      <div className="max-w-4xl mx-auto py-16 px-8">
+        <h1 className="text-4xl font-light text-gray-900 mb-8">AWS ML Projects</h1>
+        <p className="text-gray-600 mb-12 text-lg">
+          Production-ready machine learning solutions built on AWS cloud infrastructure
+        </p>
         
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="space-y-8">
           {projects.map((project) => (
-            <div key={project.id} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-all duration-200 hover:border-aws-blue/20">
-              <h2 className="text-xl font-semibold text-charcoal mb-3">{project.title}</h2>
-              <p className="text-muted mb-4 leading-relaxed">{project.description}</p>
+            <div key={project.id} className="border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <h2 className="text-xl font-medium text-gray-900 mb-2">{project.title}</h2>
+              <p className="text-gray-600 mb-4">{project.description}</p>
               
               <div className="flex gap-2 flex-wrap mb-4">
                 {project.technologies.map((tech) => (
-                  <span key={tech} className="px-3 py-1 bg-cloud-gray text-aws-blue text-sm font-medium rounded-full border border-aws-blue/20">
+                  <span key={tech} className="px-2 py-1 bg-gray-100 text-gray-700 text-xs">
                     {tech}
                   </span>
                 ))}
               </div>
               
-              <div className="mb-4 p-3 bg-teal/5 border border-teal/20 rounded-lg">
-                <p className="text-sm text-teal font-medium">
-                  <span className="text-charcoal">Impact:</span> {project.impact}
-                </p>
-              </div>
+              <p className="text-sm text-gray-500 mb-4">
+                <strong>Impact:</strong> {project.impact}
+              </p>
               
               <Link 
                 to={`/projects/${project.id}`} 
-                className="inline-flex items-center text-aws-blue text-sm font-medium hover:text-aws-blue/80 transition-colors"
+                className="text-gray-900 text-sm font-medium hover:underline"
               >
                 View Details →
               </Link>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-4 p-6 bg-white rounded-lg border border-gray-200 shadow-sm">
-            <div className="w-12 h-12 bg-golden/10 rounded-full flex items-center justify-center">
-              <span className="text-golden text-xl">🚀</span>
-            </div>
-            <div className="text-left">
-              <h3 className="font-semibold text-charcoal">Ready to collaborate?</h3>
-              <p className="text-muted text-sm">Let's discuss your next ML project</p>
-            </div>
-            <Link to="/contact" className="btn-secondary ml-4">
-              Get in Touch
-            </Link>
-          </div>
         </div>
       </div>
     </div>
