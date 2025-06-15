@@ -39,8 +39,8 @@ const Index = () => {
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200 text-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-golden rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-charcoal text-xl font-bold">ML</span>
+              <div className="w-12 h-12 bg-aws-blue rounded-full mx-auto mb-3 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">ML</span>
               </div>
               AWS Certified Machine Learning – Specialty
             </div>
@@ -82,8 +82,8 @@ const Index = () => {
               <p className="text-muted text-sm">S3, Athena, Glue, Redshift, Kinesis</p>
             </div>
             <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <div className="w-16 h-16 bg-golden rounded-full mx-auto flex items-center justify-center">
-                <span className="text-charcoal text-xl">⚙️</span>
+              <div className="w-16 h-16 bg-charcoal rounded-full mx-auto flex items-center justify-center">
+                <span className="text-white text-xl">⚙️</span>
               </div>
               <h3 className="text-lg font-medium text-charcoal">MLOps & DevOps</h3>
               <p className="text-muted text-sm">CodePipeline, CloudWatch, IAM, Terraform</p>
@@ -110,7 +110,7 @@ const Index = () => {
               <div className="flex gap-2 flex-wrap mb-4">
                 <span className="px-3 py-1 bg-aws-blue text-white text-xs rounded-full">SageMaker</span>
                 <span className="px-3 py-1 bg-teal text-white text-xs rounded-full">Lambda</span>
-                <span className="px-3 py-1 bg-golden text-charcoal text-xs rounded-full">S3</span>
+                <span className="px-3 py-1 bg-charcoal text-white text-xs rounded-full">S3</span>
               </div>
               <Link to="/projects" className="text-aws-blue text-sm font-medium hover:underline">
                 View Project →
@@ -127,7 +127,7 @@ const Index = () => {
               <div className="flex gap-2 flex-wrap mb-4">
                 <span className="px-3 py-1 bg-aws-blue text-white text-xs rounded-full">Kinesis</span>
                 <span className="px-3 py-1 bg-teal text-white text-xs rounded-full">Lambda</span>
-                <span className="px-3 py-1 bg-golden text-charcoal text-xs rounded-full">DynamoDB</span>
+                <span className="px-3 py-1 bg-charcoal text-white text-xs rounded-full">DynamoDB</span>
               </div>
               <Link to="/projects" className="text-aws-blue text-sm font-medium hover:underline">
                 View Project →
@@ -155,7 +155,7 @@ const Index = () => {
             <Link to="/contact" className="btn-primary">
               Start a Project
             </Link>
-            <Link to="/contact" className="btn-accent">
+            <Link to="/contact" className="btn-secondary">
               Download Resume
             </Link>
           </div>
