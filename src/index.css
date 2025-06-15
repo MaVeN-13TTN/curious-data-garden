@@ -3,76 +3,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Professional AWS Data Scientist Color Scheme */
 
 @layer base {
   :root {
-    --background: 244 247 250; /* #F4F7FA - Light Cloud Gray */
-    --foreground: 26 26 26; /* #1A1A1A - Near Black */
+    --background: 248 250 252; /* #F8FAFC - Softer gray-blue background */
+    --foreground: 15 23 42; /* #0F172A - Rich dark blue-gray */
 
-    --card: 0 0% 100%; /* #FFFFFF - White */
-    --card-foreground: 26 26 26; /* #1A1A1A - Near Black */
+    --card: 255 255 255; /* #FFFFFF - Pure white */
+    --card-foreground: 15 23 42; /* #0F172A - Rich dark blue-gray */
 
-    --popover: 0 0% 100%; /* #FFFFFF - White */
-    --popover-foreground: 26 26 26; /* #1A1A1A - Near Black */
+    --popover: 255 255 255; /* #FFFFFF - Pure white */
+    --popover-foreground: 15 23 42; /* #0F172A - Rich dark blue-gray */
 
-    --primary: 45 47 52; /* #2D2F34 - Charcoal Gray */
-    --primary-foreground: 244 247 250; /* #F4F7FA - Light text on dark */
+    --primary: 30 41 59; /* #1E293B - Professional slate */
+    --primary-foreground: 248 250 252; /* #F8FAFC - Light text on dark */
 
-    --secondary: 31 115 183; /* #1F73B7 - AWS blue tint */
+    --secondary: 14 116 144; /* #0E7490 - Professional cyan-blue */
     --secondary-foreground: 255 255 255; /* White text on blue */
 
-    --accent: 248 180 0; /* #F8B400 - Golden Yellow */
-    --accent-foreground: 26 26 26; /* Dark text on yellow */
+    --accent: 234 88 12; /* #EA580C - Professional orange accent */
+    --accent-foreground: 255 255 255; /* White text on orange */
 
-    --muted: 107 114 128; /* #6B7280 - Slate Gray */
-    --muted-foreground: 244 247 250; /* Light text on muted */
+    --muted: 100 116 139; /* #64748B - Professional gray */
+    --muted-foreground: 248 250 252; /* Light text on muted */
 
-    --destructive: 230 57 70; /* #E63946 - Soft Red */
+    --destructive: 220 38 38; /* #DC2626 - Professional red */
     --destructive-foreground: 255 255 255; /* White text on red */
 
-    --border: 229 231 235; /* Light border */
-    --input: 229 231 235; /* Light input border */
-    --ring: 31 115 183; /* #1F73B7 - AWS blue for focus rings */
+    --border: 226 232 240; /* #E2E8F0 - Subtle border */
+    --input: 226 232 240; /* #E2E8F0 - Input border */
+    --ring: 14 116 144; /* #0E7490 - Focus ring color */
 
     --radius: 0.5rem;
 
-    /* Custom colors for the portfolio */
-    --teal: 0 168 150; /* #00A896 - Teal for charts and features */
-    --aws-blue: 31 115 183; /* #1F73B7 */
-    --golden: 248 180 0; /* #F8B400 */
-    --charcoal: 45 47 52; /* #2D2F34 */
-    --cloud-gray: 244 247 250; /* #F4F7FA */
+    /* Professional portfolio colors */
+    --teal: 6 95 70; /* #065F46 - Deep professional teal */
+    --aws-blue: 14 116 144; /* #0E7490 - Professional blue */
+    --golden: 217 119 6; /* #D97706 - Professional amber */
+    --charcoal: 30 41 59; /* #1E293B - Professional slate */
+    --cloud-gray: 248 250 252; /* #F8FAFC - Clean background */
   }
 
   .dark {
-    --background: 26 26 26; /* #1A1A1A - Dark background */
-    --foreground: 244 247 250; /* #F4F7FA - Light text */
+    --background: 2 6 23; /* #020617 - Deep dark blue */
+    --foreground: 248 250 252; /* #F8FAFC - Light text */
 
-    --card: 45 47 52; /* #2D2F34 - Charcoal for cards */
-    --card-foreground: 244 247 250; /* Light text */
+    --card: 15 23 42; /* #0F172A - Dark card background */
+    --card-foreground: 248 250 252; /* Light text */
 
-    --popover: 45 47 52; /* #2D2F34 */
-    --popover-foreground: 244 247 250; /* Light text */
+    --popover: 15 23 42; /* #0F172A */
+    --popover-foreground: 248 250 252; /* Light text */
 
-    --primary: 58 190 255; /* #3ABEFF - Cyan Blue for dark mode */
-    --primary-foreground: 26 26 26; /* Dark text on cyan */
+    --primary: 56 189 248; /* #38BDF8 - Bright cyan for dark mode */
+    --primary-foreground: 2 6 23; /* Dark text on cyan */
 
-    --secondary: 31 115 183; /* #1F73B7 - Keep AWS blue */
+    --secondary: 14 116 144; /* #0E7490 - Keep professional blue */
     --secondary-foreground: 255 255 255; /* White text */
 
-    --accent: 248 180 0; /* #F8B400 - Keep golden yellow */
-    --accent-foreground: 26 26 26; /* Dark text */
+    --accent: 251 146 60; /* #FB923C - Warmer orange for dark mode */
+    --accent-foreground: 2 6 23; /* Dark text */
 
-    --muted: 107 114 128; /* #6B7280 */
-    --muted-foreground: 156 163 175; /* Lighter muted text */
+    --muted: 71 85 105; /* #475569 - Muted gray for dark */
+    --muted-foreground: 148 163 184; /* Lighter muted text */
 
-    --destructive: 230 57 70; /* #E63946 */
+    --destructive: 239 68 68; /* #EF4444 - Bright red for dark */
     --destructive-foreground: 255 255 255;
 
-    --border: 75 85 99; /* Darker borders */
-    --input: 75 85 99; /* Darker input borders */
-    --ring: 58 190 255; /* Cyan for focus rings */
+    --border: 30 41 59; /* Darker borders */
+    --input: 30 41 59; /* Darker input borders */
+    --ring: 56 189 248; /* Cyan for focus rings */
   }
 }
 
@@ -82,13 +82,13 @@
   }
 
   body {
-    @apply bg-background text-foreground font-light;
+    @apply bg-background text-foreground font-normal;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-medium;
+    @apply font-semibold;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
@@ -96,26 +96,26 @@
 @layer components {
   .btn-minimal {
     @apply py-3 px-6 text-sm font-medium transition-all duration-200;
-    @apply border border-transparent rounded-md;
+    @apply border border-transparent rounded-lg;
     @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
   }
   
   .btn-primary {
     @apply btn-minimal text-white;
     background-color: hsl(var(--charcoal));
-    @apply hover:opacity-90;
+    @apply hover:opacity-90 shadow-sm;
   }
   
   .btn-secondary {
     @apply btn-minimal text-white;
     background-color: hsl(var(--aws-blue));
-    @apply hover:opacity-90;
+    @apply hover:opacity-90 shadow-sm;
   }
 
   .btn-accent {
-    @apply btn-minimal text-gray-900;
+    @apply btn-minimal text-white;
     background-color: hsl(var(--golden));
-    @apply hover:opacity-90;
+    @apply hover:opacity-90 shadow-sm;
   }
 
   .text-aws-blue {

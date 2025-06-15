@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom portfolio colors
+				// Professional portfolio colors
 				'aws-blue': 'hsl(var(--aws-blue))',
 				'teal': 'hsl(var(--teal))',
 				'golden': 'hsl(var(--golden))',
