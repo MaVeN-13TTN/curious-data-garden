@@ -233,14 +233,26 @@ const Contact = () => {
                   </a>
                   
                   <a 
-                    href="https://twitter.com" 
+                    href="https://medium.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-[#1DA1F2] text-white p-3 rounded-full hover:opacity-90 transition-opacity"
-                    aria-label="Twitter Profile"
+                    className="bg-black text-white p-3 rounded-full hover:opacity-90 transition-opacity"
+                    aria-label="Medium Blog"
                   >
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                      <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                    </svg>
+                  </a>
+                  
+                  <a 
+                    href="https://x.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-black text-white p-3 rounded-full hover:opacity-90 transition-opacity"
+                    aria-label="X (Twitter) Profile"
+                  >
+                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                   </a>
                 </div>
