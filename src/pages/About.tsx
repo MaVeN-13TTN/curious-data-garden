@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import { Download, ArrowRight } from 'lucide-react';
 import { SectionHeading } from '../components/ui/section-heading';
 import { BadgeAws } from '../components/ui/badge-aws';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 
 const About = () => {
   // Refs for scroll animations
@@ -301,6 +302,9 @@ const About = () => {
           </div>
         </div>
       </section>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

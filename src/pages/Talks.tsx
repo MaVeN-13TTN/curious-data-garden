@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import { SectionHeading } from '../components/ui/section-heading';
 import { BadgeAws } from '../components/ui/badge-aws';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 // Talks data
@@ -159,6 +160,9 @@ const Talks = () => {
           </div>
         </div>
       </section>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

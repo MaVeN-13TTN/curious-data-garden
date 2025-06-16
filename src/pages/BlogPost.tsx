@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import { BadgeAws } from '../components/ui/badge-aws';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 import { ArrowLeft, Calendar, Clock, Share2, Bookmark, ThumbsUp } from 'lucide-react';
 
 // Blog post data (in a real app, this would come from an API)
@@ -317,6 +318,9 @@ const BlogPost = () => {
           </div>
         </div>
       </article>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

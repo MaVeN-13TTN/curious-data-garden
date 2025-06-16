@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import Navigation from '../components/Navigation';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 import {
   Carousel,
   CarouselContent,
@@ -524,6 +525,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

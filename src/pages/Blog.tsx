@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import { SectionHeading } from '../components/ui/section-heading';
 import { BadgeAws } from '../components/ui/badge-aws';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 import { ArrowRight, Calendar, Clock, Search } from 'lucide-react';
 
 // Blog post data
@@ -193,6 +194,9 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

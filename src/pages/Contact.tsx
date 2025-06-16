@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import { SectionHeading } from '../components/ui/section-heading';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 import { Mail, MapPin, Phone, Send, Loader2 } from 'lucide-react';
 
 const Contact = () => {
@@ -248,6 +249,9 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import { ProjectCard } from '../components/ui/card-project';
 import { SectionHeading } from '../components/ui/section-heading';
 import { BadgeAws } from '../components/ui/badge-aws';
+import { ScrollToTop } from '../components/ui/scroll-to-top';
 import { ArrowLeft } from 'lucide-react';
 
 // Project data
@@ -277,6 +278,9 @@ const Projects = () => {
           </div>
         </div>
       </section>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 };
