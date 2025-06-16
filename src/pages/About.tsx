@@ -106,51 +106,127 @@ const About = () => {
           
           <div 
             ref={skillsRef}
-            className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 opacity-0 stagger-animation"
+            className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 opacity-0 stagger-animation"
           >
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-border card-hover">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-primary text-xl">💻</span>
+            {/* Programming & Languages */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 p-6 rounded-xl shadow-lg border border-blue-200/50 dark:border-blue-700/30 card-hover group">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Programming</h3>
-              <div className="space-y-2">
-                <p className="text-muted-foreground">Python, SQL, PySpark, R</p>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium">Python</span>
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium">SQL</span>
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium">PySpark</span>
+              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-blue-600 transition-colors">Programming</h3>
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">SQL</span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">PySpark</span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">R</span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Scala</span>
                 </div>
+                <p className="text-xs text-muted-foreground">Expert in data processing & analysis</p>
               </div>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-border card-hover">
-              <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-secondary text-xl">🤖</span>
+            {/* Machine Learning & AI */}
+            <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-6 rounded-xl shadow-lg border border-primary/20 card-hover group">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/>
+                </svg>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">ML Tools</h3>
-              <div className="space-y-2">
-                <p className="text-muted-foreground">Scikit-learn, TensorFlow, PyTorch, Pandas</p>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">TensorFlow</span>
-                  <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">PyTorch</span>
-                  <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">Pandas</span>
+              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">ML & AI</h3>
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-primary/15 text-primary rounded-full text-xs font-medium">TensorFlow</span>
+                  <span className="px-3 py-1 bg-primary/15 text-primary rounded-full text-xs font-medium">PyTorch</span>
+                  <span className="px-3 py-1 bg-primary/15 text-primary rounded-full text-xs font-medium">Scikit-learn</span>
+                  <span className="px-3 py-1 bg-primary/15 text-primary rounded-full text-xs font-medium">XGBoost</span>
+                  <span className="px-3 py-1 bg-primary/15 text-primary rounded-full text-xs font-medium">LangChain</span>
+                  <span className="px-3 py-1 bg-primary/15 text-primary rounded-full text-xs font-medium">Transformers</span>
                 </div>
+                <p className="text-xs text-muted-foreground">Deep learning & generative AI</p>
               </div>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-border card-hover">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-primary text-xl">☁️</span>
+            {/* AWS Cloud Services */}
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 p-6 rounded-xl shadow-lg border border-orange-200/50 dark:border-orange-700/30 card-hover group">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.5 2c0 1.5-1.5 3-3 3s-3-1.5-3-3c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2zM7.5 6c0 1.5-1.5 3-3 3s-3-1.5-3-3c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2zm13 0c0 1.5-1.5 3-3 3s-3-1.5-3-3c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2zM7.5 18c0 1.5-1.5 3-3 3s-3-1.5-3-3c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2zm13 0c0 1.5-1.5 3-3 3s-3-1.5-3-3c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2z"/>
+                </svg>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">AWS Services</h3>
-              <div className="space-y-2">
-                <p className="text-muted-foreground">SageMaker, S3, Lambda, Glue, Athena, Redshift</p>
-                <div className="flex flex-wrap gap-2 pt-2">
+              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-orange-600 transition-colors">AWS Services</h3>
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
                   <BadgeAws service="SageMaker" />
+                  <BadgeAws service="Bedrock" />
                   <BadgeAws service="Lambda" />
                   <BadgeAws service="S3" />
                   <BadgeAws service="Glue" />
+                  <BadgeAws service="Athena" />
+                  <BadgeAws service="Kinesis" />
+                  <BadgeAws service="Redshift" />
                 </div>
+                <p className="text-xs text-muted-foreground">Cloud-native ML solutions</p>
+              </div>
+            </div>
+
+            {/* DevOps & Infrastructure */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 p-6 rounded-xl shadow-lg border border-purple-200/50 dark:border-purple-700/30 card-hover group">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18L19 6.3v4.7c0 4.52-3.05 8.64-7 9.66-3.95-1.02-7-5.14-7-9.66V6.3l7-3.12z"/>
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-purple-600 transition-colors">DevOps & IaC</h3>
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Docker</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Kubernetes</span>
+                  <BadgeAws service="Terraform" />
+                  <BadgeAws service="CloudFormation" />
+                  <BadgeAws service="CodePipeline" />
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">GitLab CI</span>
+                </div>
+                <p className="text-xs text-muted-foreground">MLOps & automation</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Additional Skills Section */}
+          <div className="max-w-4xl mx-auto mt-12 grid md:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-border">
+              <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center">
+                <svg className="w-5 h-5 mr-2 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Methodologies & Practices
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">Agile/Scrum</span>
+                <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">MLOps</span>
+                <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">CI/CD</span>
+                <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">A/B Testing</span>
+                <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">Model Monitoring</span>
+                <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">Data Governance</span>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-border">
+              <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center">
+                <svg className="w-5 h-5 mr-2 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                Visualization & Analytics
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">Tableau</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">Power BI</span>
+                <BadgeAws service="QuickSight" />
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">Plotly</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">Streamlit</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">Grafana</span>
               </div>
             </div>
           </div>

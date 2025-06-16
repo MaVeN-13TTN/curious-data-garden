@@ -10,7 +10,6 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   
   const navItems = [
-    { path: '/', label: 'Home' },
     { path: '/about', label: 'About Me' },
     { path: '/projects', label: 'Projects' },
     { path: '/mlops', label: 'MLOps & Cloud' },
@@ -63,8 +62,7 @@ const Navigation = () => {
             className="text-xl font-semibold text-primary flex items-center gap-2 hover:opacity-80 transition-opacity"
             aria-label="Home"
           >
-            <span className="text-2xl">⚡</span>
-            <span>DS Portfolio</span>
+            <span>Curious Data Garden</span>
           </Link>
           
           {/* Desktop Navigation */}
