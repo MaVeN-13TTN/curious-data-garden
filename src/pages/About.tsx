@@ -31,7 +31,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent">
       <Navigation />
       
       {/* Hero Section */}

@@ -1,61 +1,53 @@
-import { Component, ErrorInfo, ReactNode } from 'react';
+import React, { Component, ErrorInfo, ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
-  fallback?: ReactNode;
 }
 
 interface State {
   hasError: boolean;
-  error?: Error;
+  error: Error | null;
 }
 
 class ErrorBoundary extends Component<Props, State> {
-  public state: State = {
-    hasError: false
-  };
+  constructor(props: Props) {
+    super(props);
+    this.state = { 
+      hasError: false,
+      error: null
+    };
+  }
 
-  public static getDerivedStateFromError(error: Error): State {
+  static getDerivedStateFromError(error: Error): State {
     return { hasError: true, error };
   }
 
-  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Error caught by boundary:', error, errorInfo);
+  componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+    console.error('Error caught by ErrorBoundary:', error, errorInfo);
   }
 
-  public render() {
+  render(): ReactNode {
     if (this.state.hasError) {
-      if (this.props.fallback) {
-        return this.props.fallback;
-      }
-
       return (
-        <div className="min-h-screen flex items-center justify-center bg-background">
-          <div className="text-center max-w-md mx-auto px-4">
-            <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-destructive text-2xl">⚠️</span>
-            </div>
-            <h1 className="text-2xl font-bold text-foreground mb-4">
-              Something went wrong
-            </h1>
+        <div className="min-h-screen bg-background flex items-center justify-center p-4">
+          <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-border text-center">
+            <div className="text-6xl text-red-500 mb-4">⚠️</div>
+            <h1 className="text-2xl font-bold text-foreground mb-4">Something went wrong</h1>
             <p className="text-muted-foreground mb-6">
-              We're sorry, but something unexpected happened. Please try refreshing the page.
+              An error occurred while rendering the application.
             </p>
             <button
-              onClick={() => window.location.reload()}
+              onClick={() => window.location.href = '/'}
               className="btn-primary"
             >
-              Refresh Page
+              Return to Home
             </button>
-            {process.env.NODE_ENV === 'development' && this.state.error && (
-              <details className="mt-6 text-left">
-                <summary className="text-sm text-muted-foreground cursor-pointer">
-                  Error Details (Development)
-                </summary>
-                <pre className="mt-2 text-xs bg-muted p-4 rounded overflow-auto">
+            {this.state.error && (
+              <div className="mt-6 p-4 bg-red-50 dark:bg-red-900/20 rounded-md text-left">
+                <p className="text-sm font-medium text-red-800 dark:text-red-300">
                   {this.state.error.toString()}
-                </pre>
-              </details>
+                </p>
+              </div>
             )}
           </div>
         </div>

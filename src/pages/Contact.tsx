@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent">
       <Navigation />
       
       <section className="pt-32 pb-16 px-4 sm:px-6">
